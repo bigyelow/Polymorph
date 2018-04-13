@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/douban/Polymorph.git",
                      :tag => "v#{s.version}" }
   s.license      = { :type => "BSD", :file => "LICENSE" }
-  s.source_files = "Polymorph/**/*.{h,m}"
+  s.source_files = "Polymorph/**/*.{h,m,swift}"
   s.requires_arc = true
   s.static_framework = true
 

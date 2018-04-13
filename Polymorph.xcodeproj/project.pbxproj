@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71B0B2F62080AA0E00E12734 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B0B2F52080AA0E00E12734 /* TestViewController.swift */; };
 		B91E83941C75F718005B19C1 /* Polymorph.m in Sources */ = {isa = PBXBuildFile; fileRef = B931AA331C48F8C3002D3238 /* Polymorph.m */; };
 		B91E83951C75F718005B19C1 /* PLMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B931AA621C493F73002D3238 /* PLMModel.m */; };
 		B91E83961C75F718005B19C1 /* PLMArrayTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = B931AA5C1C49359B002D3238 /* PLMArrayTransformer.m */; };
@@ -70,6 +71,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		71B0B2F42080AA0D00E12734 /* Polymorph-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Polymorph-Bridging-Header.h"; sourceTree = "<group>"; };
+		71B0B2F52080AA0E00E12734 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		B91E838C1C75F6FA005B19C1 /* PolymorphTests OSX.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PolymorphTests OSX.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9236D7E1C51CFE5006F646D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9236D821C51D18C006F646D /* Bridge-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Swift.h"; sourceTree = "<group>"; };
@@ -178,6 +181,8 @@
 				B931AA621C493F73002D3238 /* PLMModel.m */,
 				B9CF4D541C4CB9A00073D637 /* PLMRawDataProvider.h */,
 				B931AA3A1C48F8EE002D3238 /* Transformers */,
+				71B0B2F52080AA0E00E12734 /* TestViewController.swift */,
+				71B0B2F42080AA0D00E12734 /* Polymorph-Bridging-Header.h */,
 			);
 			path = Polymorph;
 			sourceTree = "<group>";
@@ -351,7 +356,7 @@
 					};
 					B931AA2D1C48F8C3002D3238 = {
 						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0920;
 					};
 					B931AA411C48F90D002D3238 = {
 						CreatedOnToolsVersion = 7.2;
@@ -432,6 +437,7 @@
 			files = (
 				B931AA591C48F91A002D3238 /* EXTScope.m in Sources */,
 				B9A0A1B71C9EC000004DF101 /* PLMValueTransformer.m in Sources */,
+				71B0B2F62080AA0E00E12734 /* TestViewController.swift in Sources */,
 				B931AA341C48F8C3002D3238 /* Polymorph.m in Sources */,
 				B931AA581C48F91A002D3238 /* EXTRuntimeExtensions.m in Sources */,
 				B931AA5D1C49359B002D3238 /* PLMArrayTransformer.m in Sources */,
@@ -606,9 +612,13 @@
 		B931AA381C48F8C3002D3238 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Polymorph/Polymorph-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -616,9 +626,12 @@
 		B931AA391C48F8C3002D3238 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Polymorph/Polymorph-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -626,6 +639,7 @@
 		B931AA4B1C48F90E002D3238 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
@@ -637,6 +651,7 @@
 		B931AA4C1C48F90E002D3238 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
