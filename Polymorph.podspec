@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "BSD", :file => "LICENSE" }
   s.source_files = "Polymorph/**/*.{h,m}"
   s.requires_arc = true
+  s.static_framework = true
 
   s.ios.deployment_target = '5.0'
   s.osx.deployment_target = '10.7'
