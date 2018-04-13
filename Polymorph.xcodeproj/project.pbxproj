@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		71B0B2F62080AA0E00E12734 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B0B2F52080AA0E00E12734 /* TestViewController.swift */; };
+		71B0B2F92080AB1600E12734 /* TestOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71B0B2F82080AB1600E12734 /* TestOCViewController.m */; };
 		B91E83941C75F718005B19C1 /* Polymorph.m in Sources */ = {isa = PBXBuildFile; fileRef = B931AA331C48F8C3002D3238 /* Polymorph.m */; };
 		B91E83951C75F718005B19C1 /* PLMModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B931AA621C493F73002D3238 /* PLMModel.m */; };
 		B91E83961C75F718005B19C1 /* PLMArrayTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = B931AA5C1C49359B002D3238 /* PLMArrayTransformer.m */; };
@@ -73,6 +74,8 @@
 /* Begin PBXFileReference section */
 		71B0B2F42080AA0D00E12734 /* Polymorph-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Polymorph-Bridging-Header.h"; sourceTree = "<group>"; };
 		71B0B2F52080AA0E00E12734 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		71B0B2F72080AB1600E12734 /* TestOCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestOCViewController.h; sourceTree = "<group>"; };
+		71B0B2F82080AB1600E12734 /* TestOCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOCViewController.m; sourceTree = "<group>"; };
 		B91E838C1C75F6FA005B19C1 /* PolymorphTests OSX.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PolymorphTests OSX.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9236D7E1C51CFE5006F646D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9236D821C51D18C006F646D /* Bridge-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Swift.h"; sourceTree = "<group>"; };
@@ -183,6 +186,8 @@
 				B931AA3A1C48F8EE002D3238 /* Transformers */,
 				71B0B2F52080AA0E00E12734 /* TestViewController.swift */,
 				71B0B2F42080AA0D00E12734 /* Polymorph-Bridging-Header.h */,
+				71B0B2F72080AB1600E12734 /* TestOCViewController.h */,
+				71B0B2F82080AB1600E12734 /* TestOCViewController.m */,
 			);
 			path = Polymorph;
 			sourceTree = "<group>";
@@ -442,6 +447,7 @@
 				B931AA581C48F91A002D3238 /* EXTRuntimeExtensions.m in Sources */,
 				B931AA5D1C49359B002D3238 /* PLMArrayTransformer.m in Sources */,
 				B931AA631C493F73002D3238 /* PLMModel.m in Sources */,
+				71B0B2F92080AB1600E12734 /* TestOCViewController.m in Sources */,
 				B931AA3D1C48F8EE002D3238 /* PLMURLTransformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

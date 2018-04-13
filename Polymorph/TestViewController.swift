@@ -13,5 +13,7 @@ class TestViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    let vc = TestOCViewController()
+    vc.title = "test oc vc"
   }
 }
